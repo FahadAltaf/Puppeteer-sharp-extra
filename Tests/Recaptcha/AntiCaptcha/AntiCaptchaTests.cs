@@ -1,4 +1,4 @@
-﻿using PuppeteerExtraSharp.Plugins.Recaptcha;
+﻿using PuppeteerExtraSharp6.Plugins.Recaptcha;
 using PuppeteerSharp;
 using Xunit;
 using Xunit.Abstractions;
@@ -19,7 +19,7 @@ namespace Extra.Tests.Recaptcha.AntiCaptcha
         [Fact]
         public async void ShouldThrowCaptchaExceptionWhenCaptchaNotFound()
         {
-            var plugin = new RecaptchaPlugin(new PuppeteerExtraSharp.Plugins.Recaptcha.Provider.AntiCaptcha.AntiCaptcha(Resources.AntiCaptchaKey));
+            var plugin = new RecaptchaPlugin(new PuppeteerExtraSharp6.Plugins.Recaptcha.Provider.AntiCaptcha.AntiCaptcha(Resources.AntiCaptchaKey));
 
             var browser = await LaunchWithPluginAsync(plugin);
 
@@ -34,7 +34,7 @@ namespace Extra.Tests.Recaptcha.AntiCaptcha
         [Fact]
         public async Task ShouldSolveCaptchaWithSubmitButton()
         {
-            var plugin = new RecaptchaPlugin(new PuppeteerExtraSharp.Plugins.Recaptcha.Provider.AntiCaptcha.AntiCaptcha(Resources.AntiCaptchaKey));
+            var plugin = new RecaptchaPlugin(new PuppeteerExtraSharp6.Plugins.Recaptcha.Provider.AntiCaptcha.AntiCaptcha(Resources.AntiCaptchaKey));
             var browser = await LaunchWithPluginAsync(plugin);
 
             var page = await browser.NewPageAsync();
@@ -53,7 +53,7 @@ namespace Extra.Tests.Recaptcha.AntiCaptcha
         [Fact]
         public async void ShouldSolveCaptchaWithCallback()
         {
-            var plugin = new RecaptchaPlugin(new PuppeteerExtraSharp.Plugins.Recaptcha.Provider.AntiCaptcha.AntiCaptcha(Resources.AntiCaptchaKey));
+            var plugin = new RecaptchaPlugin(new PuppeteerExtraSharp6.Plugins.Recaptcha.Provider.AntiCaptcha.AntiCaptcha(Resources.AntiCaptchaKey));
             var browser = await LaunchWithPluginAsync(plugin);
             var page = await browser.NewPageAsync();
             await page.GoToAsync("https://lessons.zennolab.com/captchas/recaptcha/v2_nosubmit.php?level=low");
@@ -65,7 +65,7 @@ namespace Extra.Tests.Recaptcha.AntiCaptcha
             await CheckSuccessVerify(page);
         }
 
-        private async Task CheckSuccessVerify(Page page)
+        private async Task CheckSuccessVerify(IPage page)
         {
             var successElement = await page.QuerySelectorAsync("div[id='main'] div[class='description'] h2");
             var elementValue = await (await successElement.GetPropertyAsync("textContent")).JsonValueAsync<string>();

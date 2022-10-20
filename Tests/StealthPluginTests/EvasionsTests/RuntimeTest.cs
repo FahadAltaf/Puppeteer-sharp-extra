@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
-using PuppeteerExtraSharp.Plugins.ExtraStealth.Evasions;
+using PuppeteerExtraSharp6.Plugins.ExtraStealth.Evasions;
 using PuppeteerSharp;
 using Xunit;
 
@@ -48,7 +48,7 @@ namespace Extra.Tests.StealthPluginTests.EvasionsTests
         }
 
 
-        private async Task AssertThrowsConnect(Page page, string error, params object[] args)
+        private async Task AssertThrowsConnect(IPage page, string error, params object[] args)
         {
             var start =
                 "Evaluation failed: TypeError: Error in invocation of runtime.connect(optional string extensionId, optional object connectInfo): ";

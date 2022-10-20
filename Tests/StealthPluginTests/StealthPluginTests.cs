@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using PuppeteerExtraSharp.Plugins.ExtraStealth;
+using PuppeteerExtraSharp6.Plugins.ExtraStealth;
 using Xunit;
 
 namespace Extra.Tests.StealthPluginTests

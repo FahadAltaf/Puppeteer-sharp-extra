@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using PuppeteerExtraSharp.Plugins.BlockResources;
+using PuppeteerExtraSharp6.Plugins.BlockResources;
 using PuppeteerSharp;
 using Xunit;
 

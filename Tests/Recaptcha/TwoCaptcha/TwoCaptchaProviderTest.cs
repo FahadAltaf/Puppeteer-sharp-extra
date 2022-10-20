@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using PuppeteerExtraSharp.Plugins.Recaptcha;
-using PuppeteerExtraSharp.Plugins.Recaptcha.Provider;
+using PuppeteerExtraSharp6.Plugins.Recaptcha;
+using PuppeteerExtraSharp6.Plugins.Recaptcha.Provider;
 using PuppeteerSharp;
 using Xunit;
 
@@ -16,7 +16,7 @@ namespace Extra.Tests.Recaptcha.TwoCaptcha
         [Fact]
         public async Task ShouldResolveCaptchaInGooglePage()
         {
-            var plugin = new RecaptchaPlugin(new PuppeteerExtraSharp.Plugins.Recaptcha.Provider._2Captcha.TwoCaptcha(Resources.TwoCaptchaKey));
+            var plugin = new RecaptchaPlugin(new PuppeteerExtraSharp6.Plugins.Recaptcha.Provider._2Captcha.TwoCaptcha(Resources.TwoCaptchaKey));
             var browser = await this.LaunchWithPluginAsync(plugin);
 
             var page = (await browser.PagesAsync())[0];
@@ -35,7 +35,7 @@ namespace Extra.Tests.Recaptcha.TwoCaptcha
         [Fact]
         public async Task ShouldSolveInvisibleCaptcha()
         {
-            var plugin = new RecaptchaPlugin(new PuppeteerExtraSharp.Plugins.Recaptcha.Provider._2Captcha.TwoCaptcha(Resources.TwoCaptchaKey));
+            var plugin = new RecaptchaPlugin(new PuppeteerExtraSharp6.Plugins.Recaptcha.Provider._2Captcha.TwoCaptcha(Resources.TwoCaptchaKey));
             var browser = await this.LaunchWithPluginAsync(plugin);
 
             var page = (await browser.PagesAsync())[0];

@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Xunit;
-using RestClient = PuppeteerExtraSharp.Plugins.Recaptcha.RestClient.RestClient;
+using RestClient = PuppeteerExtraSharp6.Plugins.Recaptcha.RestClient.RestClient;
 
 namespace Extra.Tests.Recaptcha.RestClientTest
 {

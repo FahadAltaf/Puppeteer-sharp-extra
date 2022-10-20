@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Extra.Tests.Utils;
-using PuppeteerExtraSharp.Plugins.ExtraStealth.Evasions;
+using PuppeteerExtraSharp6.Plugins.ExtraStealth.Evasions;
 using Xunit;
 
 namespace Extra.Tests.StealthPluginTests.EvasionsTests

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
-using PuppeteerExtraSharp.Plugins.ExtraStealth.Evasions;
+using PuppeteerExtraSharp6.Plugins.ExtraStealth.Evasions;
 using PuppeteerSharp;
 using Xunit;
 

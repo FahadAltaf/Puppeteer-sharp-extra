@@ -1,0 +1,18 @@
+﻿using System.Threading.Tasks;
+using PuppeteerSharp;
+
+namespace PuppeteerExtraSharp6.Plugins.ExtraStealth.Evasions
+{
+    internal class PluginEvasion : PuppeteerExtraPlugin
+    {
+        public PluginEvasion() : base("stealth-pluginEvasion")
+        {
+        }
+
+        public override async Task OnPageCreated(IPage page)
+        {
+            var scipt = Utils.GetScript("Plugin.js");
+            await Utils.EvaluateOnNewPage(page, scipt);
+        }
+    }
+}

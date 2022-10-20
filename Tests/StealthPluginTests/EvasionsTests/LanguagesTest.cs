@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Extra.Tests.Utils;
 using Newtonsoft.Json.Linq;
-using PuppeteerExtraSharp.Plugins.ExtraStealth.Evasions;
+using PuppeteerExtraSharp6.Plugins.ExtraStealth.Evasions;
 using Xunit;
 
 namespace Extra.Tests.StealthPluginTests.EvasionsTests

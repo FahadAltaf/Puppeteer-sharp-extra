@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
-using PuppeteerExtraSharp.Plugins.ExtraStealth.Evasions;
+using PuppeteerExtraSharp6.Plugins.ExtraStealth.Evasions;
+using PuppeteerExtraSharp6.Plugins.ExtraStealth.Evasions;
 using PuppeteerSharp;
 using Xunit;
 

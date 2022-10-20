@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using PuppeteerExtraSharp.Plugins.ExtraStealth;
+using PuppeteerExtraSharp6.Plugins.ExtraStealth;
 using PuppeteerSharp;
 using Xunit;
 
