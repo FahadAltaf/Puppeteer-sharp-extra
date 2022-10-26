@@ -4,6 +4,10 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>PuppeteerSharpExtra6</Title>
+    <Authors>Berstend, Fahad Altaf</Authors>
+    <PackageProjectUrl>https://github.com/berstend/puppeteer-extra</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
